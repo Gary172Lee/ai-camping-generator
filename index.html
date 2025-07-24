@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 熱門露營區生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI 熱門露營區生成器</h1>
+        <div class="input-group">
+            <label for="cityInput">自訂露營地點縣市名稱:</label>
+            <input type="text" id="cityInput" placeholder="例如：新北市" value="新北市">
+        </div>
+        <div class="input-group">
+            <label for="countSelect">顯示筆數:</label>
+            <select id="countSelect">
+                <option value="10">10筆</option>
+                <option value="20">20筆</option>
+                <option value="50">50筆</option>
+            </select>
+        </div>
+        <button id="generateBtn">生成熱門露營區</button>
+        <div id="loading" class="hidden">載入中，請稍候...</div>
+        <div id="errorMessage" class="error-message hidden"></div>
+        <div id="results" class="results-box">
+            <h2>最熱門露營區</h2>
+            <ul id="campingList">
+                </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

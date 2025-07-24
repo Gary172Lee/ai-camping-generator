@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 改為 flex-start 避免內容過長被裁切 */
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 20px;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* 綠色 */
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#loading {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.results-box {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.results-box h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+#campingList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#campingList li {
+    background-color: #e9f5ee; /* 淺綠色背景 */
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    font-size: 1.1em;
+    color: #364f6b;
+    display: flex;
+    align-items: center;
+}
+
+#campingList li:last-child {
+    margin-bottom: 0;
+}
+
+#campingList li::before {
+    content: '🏕️'; /* 露營帳篷 emoji */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
