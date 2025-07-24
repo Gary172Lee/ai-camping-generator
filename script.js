@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const campingList = document.getElementById('campingList');
 
     // *** 請將此處替換為您 Cloud Function 部署成功後的觸發網址 ***
-    const CLOUD_FUNCTION_URL = 'YOUR_CLOUD_FUNCTION_URL_HERE'; // 例如: https://asia-east1-your-project-id.cloudfunctions.net/getPopularCampingSites
+    const CLOUD_FUNCTION_URL = 'https://get-popular-camping-sites-34249909933.asia-east1.run.app'; // 例如: https://asia-east1-your-project-id.cloudfunctions.net/getPopularCampingSites
 
     generateBtn.addEventListener('click', async () => {
         const city = cityInput.value.trim();
